@@ -9,6 +9,7 @@ body {
     
 }
 
+
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
@@ -107,9 +108,9 @@ ul {
 
 .headerBlock {
     background-color: rgb(255, 255, 255);
-    width: 100%;
-    width: 100vw;
+    max-width: 1080px;
     height: 190px;
+    overflow: hidden;
 
 }
 
@@ -169,6 +170,7 @@ a:link {
       position: relative;
       top: 370px;
       right: -400px;
+      width: 100px;
   }
 
   #about:hover {
@@ -180,6 +182,7 @@ a:link {
 }
 
 #gallery{
+    width: 100px;
     position: relative;
       top: 340px;
       right: -940px;
@@ -241,7 +244,7 @@ a:link {
 
   @keyframes grow {
     from {width: 0px;}
-    to {width: 1450px;}
+    to {width: 1420px;}
   }
 
   .displayH img {
@@ -252,6 +255,8 @@ a:link {
       display: inline-block;
       text-align: center;
       margin-right: 40px;
+      position: relative;
+      right: -70px;
   }
 
 
@@ -317,6 +322,22 @@ a:link {
       
   }
 
+  #heartEmoji {
+      text-align: center;
+      position: relative;
+      top: -140px;
+      animation-name: heartGrow;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      
+  }
+
+  @keyframes heartGrow {
+    0% {font-size: 20px;}
+    50% {font-size: 80px;}
+    100% {font-size: 20px;}
+  }
+
 
 
  
@@ -351,13 +372,38 @@ img {
 }
 
 #foodPhoto1:hover {
-    border: 20px solid;
+    border: 10px solid;
     border-color: green;
 }
 
 #foodPhoto1 {
     position: relative;
-    top: 40px;
+    top: 280px;
+    left: 40px;
+}
+
+#foodPhoto2 {
+    position: relative;
+    top: 275px;
+    left: 40px;
+    
+}
+
+#foodPhoto2:hover {
+    border: 10px solid;
+    border-color: red;
+}
+
+#foodPhoto3 {
+    position: relative;
+    top: 275px;
+    left: 40px;
+
+}
+
+#foodPhoto3:hover {
+    border: 10px solid;
+    border-color: yellow;
 }
 
 #Recipes {
@@ -386,6 +432,84 @@ img {
     animation-duration: 2s;
 
 }
+
+p {
+    font-family: HelveticaNeue-UltraLight;
+    font-size: 20px;
+
+}
+
+h2 {
+    font-family: HelveticaNeue;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: HelveticaNeue;
+}
+
+
+#recipe1 {
+    position: relative;
+    right: -400px;
+    padding: 10px;
+    margin-right: 500px;
+}
+
+#recipe2 {
+    position: relative;
+    right: -400px;
+    padding: 10px;
+    margin-right: 500px;
+}
+
+#recipe3 {
+    position: relative;
+    right: -400px;
+    padding: 10px;
+    margin-right: 500px;
+
+}
+
+#DividerLine1 {
+    background-color: black;
+    width: 0px;
+    height: 1px;
+    position: relative;
+    top: 150px;
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+
+}
+
+#DividerLine2 {
+    background-color: black;
+    width: 0px;
+    height: 1px;
+    position: relative;
+    top: 150px;
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+#DividerLine3 {
+
+    background-color: black;
+    width: 0px;
+    height: 1px;
+    position: relative;
+    top: 150px;
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+
 
 
 
